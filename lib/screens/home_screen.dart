@@ -7,16 +7,18 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeScreen'),
+        title: const Center(child: Text('HomeScreen')),
         elevation: 0,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: const <Widget>[
-          Text("Deliver features faster"),
-          Text("Craft Beautiful UI"),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const <Widget>[
+            Text("Deliver features faster"),
+            Text("Craft Beautiful UI"),
+          ],
+        ),
       ),
     );
   }
